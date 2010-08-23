@@ -1,0 +1,5 @@
+# Brighton Wok: Public Documents #
+
+Contains info sheets, press documents etc. about the film Brighton Wok (http://brighton-wok.com)
+
+Also contains TeX files for the creation of said documents.

@@ -1,34 +1,41 @@
-# Brighton Wok: The Legend of Ganja Boxing
+Brighton Wok: The Legend of Ganja Boxing
+========================================
 
-http://www.brighton-wok.com
+\begin{description}[style=multiline,leftmargin=3cm,font=\normalfont]
+\item[Website:]  \website{http://www.brighton-wok.com}
+\item[Released:] 2008
+\item[Length:]  90 mins
+\item[Director:] Gabriel Howard
+\item[IMDB:]  \website{http://www.imdb.com/title/tt1233253/}
+\item[RRP:] £9.99
+\item[DVD:] Widescreen presentation with 5.1 surround sound
+\end{description}
 
-Released: 2008
 
-Duration: 90 mins
+About the Film
+--------------
 
-Director: Gabriel Howard
-
-IMDB:  http://www.imdb.com/title/tt1233253/
-
-## Synopsis
-
-NINJAS - GANJA - KUNG-FU
-
-Ninjas are taking over Brighton. Terrorising locals, killing hippies, blocking supplies of marijuana.
+_Ninjas are taking over Brighton. Terrorising locals, killing
+hippies, blocking supplies of marijuana._
  
-Can The Chosen One learn the ancient martial art of Ganja Boxing to save his home town and avenge his past?
- 
-First, he must find The Ganja Master.
- 
-The British cult-classic of the 2000’s, Brighton Wok is a micro-budget, independent feature film available on widescreen DVD with 5.1 surround sound.
- 
-A Stoner Film and a Kung Fu comedy set – incongruously – in an English seaside resort and inspired by comic culture and 80’s movies.
- 
-Brighton Wok was filmed all over Sussex, with locations including: The Hundred Acre Wood (Winnie the Pooh), Chanctonbury Ring, Devils' Dyke, Seaford, Beachy Head, Ditchling Beacon, Woodingdean, Harrison's Rocks, all over Brighton and of course Hove.
+_Can The Chosen One learn the ancient martial art of Ganja Boxing
+to save his home town and avenge his past?_
 
-Selling online and at independent video shops across the world.
+_First, he must find The Ganja Master._
+ 
+The British surprise hit of the 2000’s, Brighton Wok is a micro-budget,
+independent feature film available on widescreen DVD with
+5.1 surround sound.
+ 
+A Stoner Film and Kung Fu comedy set – incongruously – in an English
+seaside resort and inspired by comic culture and 80’s movies.
+ 
+Brighton Wok was filmed all over Sussex, with locations including:
+The Hundred Acre Wood (Winnie the Pooh), Chanctonbury Ring, Devils'
+Dyke, Seaford, Beachy Head, Ditchling Beacon, Woodingdean, Harrison's
+Rocks, all over Brighton and of course Hove.
 
-Recommended Retail Price: £9.99
-
-Production Company: Convict Films http://convictfilms.com
+Selling online and at independent video shops across the world, featured
+at film festivals and events across Europe and America, Brighton Wok has
+become a true cult classic.
 

@@ -1,5 +1,21 @@
 # Brighton Wok: Public Documents #
 
-Contains info sheets, press documents etc. about the film Brighton Wok (http://brighton-wok.com)
+Contains info sheets, press releases etc. about the film [Brighton Wok][1]
 
-Also contains TeX files for the creation of said documents.
+Also contains markdown, TeX, images and scripts for the creation of said documents.
+
+## Markdown to PDF process ##
+
+Uses markdown2pdf from [Pandoc][2]
+
+Use the helper script in /bin
+
+    ./bwok-markdown2pdf.sh ../markdown/file-to-convert.mkd
+
+The latex directory needs to be in your path, I have this in my .bashrc
+
+    export TEXINPUTS=".:~/repos/brighton-wok-documents/latex:" 
+
+
+[1]: http://brighton-wok.com
+[2]: http://johnmacfarlane.net/pandoc/README.html

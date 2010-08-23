@@ -1,0 +1,31 @@
+% First, define the Title 
+\def\documenttitle{Title of the Doc}
+
+% Require the BWOK preamble
+\input{bwokpre}
+
+\usepackage{wrapfig}
+
+\begin{document}
+
+% Big BWOK header
+\bwokbigheader
+
+% Standard Title and Client Name
+\bwoktitle{\documenttitle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACTUAL CONTENT STARTS HERE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Section Name}
+
+Text goes here
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACTUAL CONTENT ENDS HERE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Require the BWOK footer
+\input{bwokpost}
+
+\end{document}

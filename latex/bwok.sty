@@ -1,0 +1,25 @@
+\ProvidesPackage{bwok}
+
+\newcommand{\website}[1]{
+	\href{http://#1}{\tt #1}
+}
+
+\newcommand{\bwokbigheader}[1]{
+    \setlength{\unitlength}{1mm}
+    \chead{
+        \begin{picture}(0,0)
+            % \put(-142pt,0){\includegraphics{../images/brighton-wok-logo.png}}
+% \begin{center}
+            \put(-50,0){\includegraphics[width=100mm]{../images/brighton-wok-logo.png}}
+            % \includegraphics{../images/brighton-wok-logo.png}
+% \end{center}
+        \end{picture}
+\medskip
+}
+}
+
+\newcommand{\bwoktitle}[1]{
+	\centerline{\Large \bf #1}
+}
+
+

@@ -1,0 +1,104 @@
+% Convict Films Order Form
+% @Copyright 2010-09-06 Saul Howard
+% http://github.com/saulhoward/brighton-wok-documents
+
+% First, define the Title 
+\def\documenttitle{Order Form}
+
+% Require the BWOK forms preamble
+\input{bwokformspre}
+\usepackage{wrapfig}
+\begin{document}
+
+% Big BWOK header
+\bwokbigheaderwithdetails
+
+\vspace*{0.5in}
+
+% Standard Title and Client Name
+\bwoktitle{\documenttitle}
+\vspace*{0.2in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACTUAL CONTENT STARTS HERE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\arraystretch}{2.2}
+
+\begin{center} 
+
+\begin{tabularx} 
+	{1\textwidth}%
+	{@{\extracolsep{\fill}}|Xr|} 
+	\hline 
+    Customer Name (pls print): & Order Date: \hspace{1in} \\
+	\hline 
+\end{tabularx} 
+
+\vspace{0.02in}
+
+\begin{tabular*} 
+	{1\textwidth}%
+	{@{\extracolsep{\fill}}|lr|} 
+    \hline 
+		Address: &  \\ 
+		City, St., Post Code: &  \\ 
+		Phone: & email: \hspace{2.5in} \\ 
+    \hline 
+\end{tabular*} 
+
+\vspace{0.02in}
+
+\begin{tabular*} 
+	{1\textwidth}%
+	{@{\extracolsep{\fill}}|lr|} 
+    \hline 
+		Ship To Name (pls print): &  \\ 
+		Address: &  \\ 
+		City, St., Post Code: &  Phone: \hspace{1.5in} \\ 
+    \hline 
+\end{tabular*} 
+
+\vspace{0.02in}
+
+\begin{tabularx} 
+	{1\textwidth}%
+	{|X|r|r|r|} 
+    \hline 
+		Item & Unit Price & \hspace{.2in} Quantity \hspace{.2in} & \hspace{.2in} Total Price \hspace{.2in} \\ 
+    \hline 
+		Brighton Wok DVD & \pounds 3.00 & & \\ 
+\vspace*{-1cm}
+		\textit{DVD-5, 5.1 Surround Sound, Widescreen} & & & \\ 
+    \hline  
+       \multicolumn{3}{|r|}{TOTAL:} & \\ 
+    \hline 
+\end{tabularx} 
+
+\vspace{2em}
+
+\begin{tabularx} 
+	{.75\textwidth}%
+    { >{\centering}X >{\centering}X }
+    Payment included: \hspace{.5em} {\huge \Square} & Invoice me:\hspace{.5em} {\huge \Square}
+\end{tabularx}
+
+\end{center}
+
+\bigskip
+
+\subsection*{Notes}
+\begin{itemize}
+\item Prices are for orders of 10 DVDs and over only. For smaller orders please phone.
+\item Shipping costs are \pounds 10.00 on the first 10 DVDs, and \pounds 5.00 for each further set of 10.
+\item For orders in Brighton, free delivery can be arranged.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACTUAL CONTENT ENDS HERE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Require the BWOK footer
+\input{bwokpost}
+
+\end{document}
+

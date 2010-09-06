@@ -1,7 +1,7 @@
 \ProvidesPackage{bwok}
 
 \newcommand{\website}[1]{
-	\href{http://#1}{\tt #1}
+    \href{http://#1}{\tt #1}
 }
 
 \newcommand{\bwokbigheader}[1]{
@@ -9,21 +9,45 @@
     \chead{
         \begin{picture}(0,0)
             % \put(-142pt,0){\includegraphics{../images/brighton-wok-logo.png}}
-% \begin{center}
-            \put(-50,0){\includegraphics[width=100mm]{../images/brighton-wok-logo.png}}
-            % \includegraphics{../images/brighton-wok-logo.png}
-% \end{center}
+        % \begin{center}
+        \put(-50,0){\includegraphics[width=100mm]{../images/brighton-wok-logo.png}}
+        % \includegraphics{../images/brighton-wok-logo.png}
+        % \end{center}
         \end{picture}
-\medskip
+        \medskip
+    }
 }
+\newcommand{\bwokbigheaderwithdetails}[1]{
+    \setlength{\unitlength}{1mm}
+    \chead{
+        \begin{picture}(0,0)
+        \put(-50,0){\includegraphics[width=100mm]{../../images/brighton-wok-logo.png}}
+        \end{picture}
+        \begin{center}
+        \renewcommand{\arraystretch}{1}
+        \begin{tabularx}
+        {1\textwidth}
+        % {l >{\centering}X r}
+        { >{\raggedright}X >{\centering}X >{\raggedleft}X }
+        12 Chesham Rd
+            & \href{http://convictfilms.com}{convictfilms.com} 
+            & tel: +44 (0) 1273 674 586 \tabularnewline
+            Brighton, BN2 1NB &
+            \href{mailto:sales@convictfilms.com}{sales@convictfilms.com} 
+        & fax: +44 (0) 1273 674 586 
+            \end{tabularx}
+        \end{center}
+        \medskip
+    }
 }
 
+
 \newcommand{\bwoktitle}[1]{
-	\centerline{\Large \bf #1}
+    \centerline{\Large \bf #1}
 }
 \newcommand{\bwoklighttext}[1]{
-\definecolor{light-text}{gray}{0.2}
-\textcolor{light-text}{#1}
+    \definecolor{light-text}{gray}{0.2}
+    \textcolor{light-text}{#1}
 }
 
 

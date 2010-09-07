@@ -1,22 +1,52 @@
-\documentclass[letterpaper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Header for BWok documents
+%% include before document start
+%% Now using XeLaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,a4paper,oneside]{article}
+
+\usepackage{ifxetex}
+\ifxetex
+\usepackage[xetex]{graphicx}
+\usepackage{fontspec,xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\setmainfont{Helvetica Neue}
+\setmonofont[Scale=0.9]{Prestige Elite LT}
+\newfontinstance\thai{Garuda}
+\newfontinstance\bwokheader[Scale=0.8,Numbers={Proportional,OldStyle}]{Adobe Caslon}
+\newfontinstance\bwokenumlist[Scale=1,Numbers={Proportional,OldStyle}]{Adobe Caslon}
+% \usepackage{polyglossia}
+% \setdefaultlanguage{USenglish}
+% \usepackage[final,expansion=true,protrusion=true,spacing=true,kerning=true]{microtype}
+
+\else % not XeTeX
+% Thai & Helvetica
+\usepackage[utf8x]{inputenc}
+\usepackage[thai,USenglish]{babel}
+\usepackage{thswitch}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\fi % not XeTeX
 
 \usepackage{bwok}
 \usepackage{hyperref}
 \usepackage{geometry}
-
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{wasysym}
+% \usepackage{mathtools}
+\usepackage{textcomp}
+\usepackage{multicol}
 \usepackage[usenames]{color}
-
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
+\usepackage[bf]{caption}
 
-% Helvetica
-\usepackage[T1]{fontenc}
-\usepackage[scaled]{helvet}
-\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
-
-\def\footerlink{http://convictfilms.com/}
+\def\footerlink{http://convictfilms.com}
 
 % The following metadata will show up in the PDF properties
 \hypersetup{
@@ -28,24 +58,19 @@
   pdfsubject = {Brighton Wok: The Legend of Ganja Boxing},
   pdfpagemode = UseNone
 }
-
 \geometry{
-  body={6.5in, 8.5in},
-%  body={6.5in, 9.5in},
+  body={6.5in, 9.5in},
   left=1.0in,
-  top=1.25in
-%  top=1.5in
+  top=1.5in
 }
-
-% Customize page headers
-% \pagestyle{myheadings}
-% \thispagestyle{empty}
 
 % Using FancyHDR package
 \fancyhead{}
 \fancyfoot{}
 \renewcommand{\headwidth}{6.5in}
 \renewcommand{\headrulewidth}{0pt}
+% \setlength{\headheight}{67pt}
+\setlength{\headheight}{30pt}
 
 
 % Custom section fonts
@@ -73,8 +98,18 @@
 %  \end{list}
 %}
 
-
-
-
-
+\newenvironment{squashed_enumerate}
+{\begin{enumerate}
+\renewcommand{\theenumi}{{\bwokenumlist{\itshape\arabic{enumi}.}}}
+\renewcommand{\labelenumi}{\theenumi}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}}
+{\end{enumerate}}
+\newenvironment{squashed_itemize}
+{\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}}
+{\end{itemize}}
 

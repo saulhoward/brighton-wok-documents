@@ -16,6 +16,10 @@ The latex directory needs to be in your path, I have this in my .bashrc
 
     export TEXINPUTS=".:~/repos/brighton-wok-documents/latex:" 
 
+The script uses xelatex, which will then specify certain fonts. If you
+don't have them, edit the script to remove the '--xetex' and re-run the
+script, it will use LaTeX default fonts.
+
 
 [1]: http://brighton-wok.com
 [2]: http://johnmacfarlane.net/pandoc/README.html

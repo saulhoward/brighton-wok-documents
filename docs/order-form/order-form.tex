@@ -6,26 +6,29 @@
 \def\documenttitle{Order Form}
 
 % Require the BWOK forms preamble
-\input{bwokformspre}
+\input{bwokpre}
 \usepackage{wrapfig}
 \begin{document}
 
 % Big BWOK header
 \bwokbigheaderwithdetails
 
-\vspace*{0.5in}
-
-% Standard Title and Client Name
+% Standard Title 
 \bwoktitle{\documenttitle}
-\vspace*{0.2in}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ACTUAL CONTENT STARTS HERE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand{\arraystretch}{2.2}
+
+\begin{squashed_enumerate}
+\item Fill in this sheet with your address and the number of DVDs required.
+\item Calculate shipping costs (see notes) and total.
+\item Send it to us at Convict Films. Include a cheque or mark `invoice me' below.
+\end{squashed_enumerate}
 
 \begin{center} 
-
+\begin{table}[!h]
+\renewcommand{\arraystretch}{2.4}
 \begin{tabularx} 
 	{1\textwidth}%
 	{@{\extracolsep{\fill}}|Xr|} 
@@ -66,9 +69,10 @@
     \hline 
 		Item & Unit Price & \hspace{.2in} Quantity \hspace{.2in} & \hspace{.2in} Total Price \hspace{.2in} \\ 
     \hline 
-		Brighton Wok DVD & \pounds 3.00 & & \\ 
-\vspace*{-1cm}
-		\textit{DVD-5, 5.1 Surround Sound, Widescreen} & & & \\ 
+    \parbox{20em}{Brighton Wok DVD\newline \textit{DVD-5, 5.1 Surround Sound, Widescreen}} & \pounds 3.00 & & \\ 
+
+    \hline  
+        \multicolumn{3}{|l|}{\parbox{30em}{Shipping\newline \textit{\pounds 10.00 for the first 10 and \pounds 5.00 for each further set of 10 (see notes)}}} & \\
     \hline  
        \multicolumn{3}{|r|}{TOTAL:} & \\ 
     \hline 
@@ -76,22 +80,24 @@
 
 \vspace{2em}
 
+\begin{center}
 \begin{tabularx} 
 	{.75\textwidth}%
     { >{\centering}X >{\centering}X }
     Payment included: \hspace{.5em} {\huge \Square} & Invoice me:\hspace{.5em} {\huge \Square}
 \end{tabularx}
-
 \end{center}
 
-\bigskip
+\end{table}
+\end{center}
 
 \subsection*{Notes}
-\begin{itemize}
-\item Prices are for orders of 10 DVDs and over only. For smaller orders please phone.
+\begin{squashed_itemize}
 \item Shipping costs are \pounds 10.00 on the first 10 DVDs, and \pounds 5.00 for each further set of 10.
 \item For orders in Brighton, free delivery can be arranged.
-\end{itemize}
+\item Please make cheques out to {\bfseries Convict Films}.
+\item Prices are for orders of 10 DVDs and over only. For smaller orders please phone.
+\end{squashed_itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ACTUAL CONTENT ENDS HERE

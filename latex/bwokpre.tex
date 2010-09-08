@@ -11,12 +11,33 @@
 \usepackage{fontspec,xunicode}
 \usepackage{xltxtra}
 \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-\setmainfont{Helvetica Neue}
+
+% Main Fonts
+\setmainfont[
+    Ligatures={Contextual},
+    ItalicFont={Helvetica Neue LT Pro 46 Light Italic}, 
+    BoldFont={Helvetica Neue LT Pro 75 Bold}
+]{Helvetica Neue LT Pro 45 Light}
 \setmonofont[Scale=0.9]{Prestige Elite LT}
 \newfontinstance\thai{Garuda}
-\newfontinstance\bwokheader[Scale=0.8,Numbers={Proportional,OldStyle},Ligatures=Historical]{Linux Libertine}
-\newfontinstance\bwokheadersmallcaps[Scale=0.8,Numbers={Proportional,OldStyle},Ligatures=Historical,Letters=UppercaseSmallCaps]{Linux Libertine}
-\newfontinstance\bwokenumlist[Scale=1,Numbers={Proportional,OldStyle}]{Linux Libertine}
+
+% Header Fonts
+\newfontinstance\bwokheader[
+    Scale=0.8,
+    Color=444444,
+    Numbers={Proportional,OldStyle},
+    Ligatures=Historical
+] {Linux Libertine}
+\newfontinstance\bwokheadersmallcaps[
+    Scale=0.8,
+    Color=444444,
+    Numbers={Proportional,OldStyle},
+    Ligatures=Historical,
+    Letters=UppercaseSmallCaps
+]{Linux Libertine}
+% \newfontinstance\bwokenumlist[Ligatures={Common}]{WhitneyNumeric}
+\newfontinstance\bwokenumlist[Scale=0.7]{Numbers Premium}
+
 % \usepackage{polyglossia}
 % \setdefaultlanguage{USenglish}
 % \usepackage[final,expansion=true,protrusion=true,spacing=true,kerning=true]{microtype}
@@ -101,7 +122,7 @@
 
 \newenvironment{squashed_enumerate}
 {\begin{enumerate}
-\renewcommand{\theenumi}{{\bwokenumlist{\itshape\arabic{enumi}.}}}
+\renewcommand{\theenumi}{{\bwokenumlist{\arabic{enumi}}.}}
 \renewcommand{\labelenumi}{\theenumi}
   \setlength{\itemsep}{1pt}
   \setlength{\parskip}{0pt}

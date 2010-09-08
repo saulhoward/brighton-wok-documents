@@ -2,12 +2,11 @@
 % @Copyright 2010-09-06 Saul Howard
 % http://github.com/saulhoward/brighton-wok-documents
 
-% First, define the Title 
 \def\documenttitle{Order Form}
+\input{bwok-pre-document-article}
+\input{bwok-pre-font-sans}
+\input{bwok-pre-packages}
 
-% Require the BWOK forms preamble
-\input{bwokpre}
-\usepackage{wrapfig}
 \begin{document}
 
 % Big BWOK header
@@ -67,12 +66,23 @@
 	{1\textwidth}%
 	{|X|r|r|r|} 
     \hline 
-		Item & Unit Price & \hspace{.2in} Quantity \hspace{.2in} & \hspace{.2in} Total Price \hspace{.2in} \\ 
-    \hline 
-    \parbox{20em}{Brighton Wok DVD\newline \textit{DVD-5, 5.1 Surround Sound, Widescreen}} & \pounds 3.00 & & \\ 
-
-    \hline  
-        \multicolumn{3}{|l|}{\parbox{30em}{Shipping\newline \textit{\pounds 10.00 for the first 10 and \pounds 5.00 for each further set of 10 (see notes)}}} & \\
+		Item & Unit Price 
+        & \hspace{.2in} Quantity \hspace{.2in} 
+        & \hspace{.2in} Total Price \hspace{.2in} \\ 
+        \hline 
+        \parbox{20em}{
+            Brighton Wok DVD\newline 
+                \textit{DVD-5, 5.1 Surround Sound, Widescreen}
+        } 
+        & \pounds 3.00 & & \\ 
+        \hline  
+        \multicolumn{3}{|l|}{
+            \parbox{30em}{
+                Shipping\newline 
+                \textit{\pounds 10.00 for the first 10 and 
+                        \pounds 5.00 for each further set of 10 (see notes)}
+            }
+        } & \\
     \hline  
        \multicolumn{3}{|r|}{TOTAL:} & \\ 
     \hline 
@@ -84,7 +94,8 @@
 \begin{tabularx} 
 	{.75\textwidth}%
     { >{\centering}X >{\centering}X }
-    Payment included: \hspace{.5em} {\huge \Square} & Invoice me:\hspace{.5em} {\huge \Square}
+    Payment included: \hspace{.5em} {\huge \Square} 
+    & Invoice me:\hspace{.5em} {\huge \Square}
 \end{tabularx}
 \end{center}
 
@@ -93,7 +104,8 @@
 
 \subsection*{Notes}
 \begin{squashed_itemize}
-\item Shipping costs are \pounds 10.00 on the first 10 DVDs, and \pounds 5.00 for each further set of 10.
+\item Shipping costs are \pounds 10.00 on the first 10 DVDs, 
+    and \pounds 5.00 for each further set of 10.
 \item For orders in Brighton, free delivery can be arranged.
 \item Please make cheques out to `Convict Films'.
 \item Prices are for orders of 10 DVDs and over only. For smaller orders please phone.
@@ -104,7 +116,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Require the BWOK footer
-\input{bwokpost}
+\input{bwok-footer}
 
 \end{document}
 

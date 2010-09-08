@@ -1,44 +1,42 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% BWok.sty package providing common
+%% functions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \ProvidesPackage{bwok}
 
 \newcommand{\website}[1]{
     \href{http://#1}{\tt #1}
 }
+\newcommand{\bwoklogo}{
+    \begin{picture}(0,0)
+        \put(-50,0){\includegraphics[width=100mm]{brighton-wok-logo.png}}
+    \end{picture}
+}
 
-\newcommand{\bwokbigheader}[1]{
-    \setlength{\unitlength}{1mm}
+\newcommand{\bwokbigheader}{
     \chead{
-        \begin{picture}(0,0)
-            % \put(-142pt,0){\includegraphics{../images/brighton-wok-logo.png}}
-        % \begin{center}
-        \put(-50,0){\includegraphics[width=100mm]{../images/brighton-wok-logo.png}}
-        % \includegraphics{../images/brighton-wok-logo.png}
-        % \end{center}
-        \end{picture}
-        \medskip
+        \bwoklogo
     }
 }
-\newcommand{\bwokbigheaderwithdetails}[1]{
-    \setlength{\unitlength}{1mm}
+\newcommand{\bwokbigheaderwithdetails}{
     \chead{
-        \begin{picture}(0,0)
-        \put(-50,0){\includegraphics[width=100mm]{../../images/brighton-wok-logo.png}}
-        \end{picture}
-        \begin{center}
+        \bwoklogo
+            \begin{center}
         \renewcommand{\arraystretch}{1}
         \begin{tabularx}
         {0.75\textwidth}
         { >{\raggedright}X >{\centering}X >{\raggedleft}X }
-         {\bwokheader 12 Chesham Rd }
-            & \href{http://convictfilms.com}{{\bwokheader convictfilms.com}} 
+        {\bwokheader 12 Chesham Rd }
+        & \href{http://convictfilms.com}{{\bwokheader convictfilms.com}} 
             & {\bwokheader tel: +44 (0) 1273 674 586} \tabularnewline
             {\bwokheader Brighton, }{\bwokheadersmallcaps BN2 1NB} &
-            \href{mailto:sales@convictfilms.com}{{\bwokheader sales@convictfilms.com} }
-         & {\bwokheader fax: +44 (0) 1273 674 586 }
-            \end{tabularx}
+        \href{mailto:sales@convictfilms.com}{{\bwokheader sales@convictfilms.com} }
+        & {\bwokheader fax: +44 (0) 1273 674 586 }
+        \end{tabularx}
         \end{center}
     }
 }
-
 
 \newcommand{\bwoktitle}[1]{
     \centerline{\Large \bf #1}
@@ -47,6 +45,4 @@
     \definecolor{light-text}{gray}{0.2}
     \textcolor{light-text}{#1}
 }
-
-
 

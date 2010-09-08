@@ -1,0 +1,71 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Common Latex Preamble
+%% include before document start
+%% @Copyright Saul Howard 08-09-10
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{wasysym}
+% \usepackage{mathtools}
+\usepackage{textcomp}
+\usepackage{multicol}
+\usepackage[usenames]{color}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage[bf]{caption}
+
+% Using FancyHDR package
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headwidth}{6.5in}
+\renewcommand{\headrulewidth}{0pt}
+% \setlength{\headheight}{67pt}
+\setlength{\headheight}{30pt}
+
+
+% Custom section fonts
+% \usepackage{sectsty}
+% \sectionfont{\bf\Large}
+% \subsectionfont{\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+
+% Make lists without bullets
+%\renewenvironment{itemize}{
+%  \begin{list}{}{
+%    \setlength{\leftmargin}{1.5em}
+%  }
+%}{
+%  \end{list}
+%}
+
+\newenvironment{squashed_enumerate}
+{\begin{enumerate}
+\renewcommand{\theenumi}{{\bwokenumlist{\arabic{enumi}}.}}
+\renewcommand{\labelenumi}{\theenumi}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}}
+{\end{enumerate}}
+\newenvironment{squashed_itemize}
+{\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}}
+{\end{itemize}}
+
+
+\setlength{\unitlength}{1mm}

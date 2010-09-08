@@ -1,0 +1,40 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Header for BWok documents
+%% include before document start
+%% Now using XeLaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{ifxetex}
+\ifxetex
+\usepackage[xetex]{graphicx}
+\usepackage{fontspec,xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+% Main Fonts
+\setmainfont[
+    Ligatures={Contextual},
+    ItalicFont={Helvetica Neue LT Pro 46 Light Italic}, 
+    BoldFont={Helvetica Neue LT Pro 75 Bold}
+]{Helvetica Neue LT Pro 45 Light}
+\setmonofont[Scale=0.9]{Prestige Elite LT}
+\newfontinstance\thai{Garuda}
+\newfontinstance\bwokenumlist[Scale=0.7]{Numbers Premium}
+% \newfontinstance\bwokenumlist[Ligatures={Common}]{WhitneyNumeric}
+
+\input{bwok-header-fonts}
+
+% \usepackage{polyglossia}
+% \setdefaultlanguage{USenglish}
+% \usepackage[final,expansion=true,protrusion=true,spacing=true,kerning=true]{microtype}
+
+\else % not XeTeX
+% Thai & Helvetica
+\usepackage[utf8x]{inputenc}
+\usepackage[thai,USenglish]{babel}
+\usepackage{thswitch}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\fi % not XeTeX
+
+

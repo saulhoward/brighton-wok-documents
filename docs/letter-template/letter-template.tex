@@ -1,0 +1,35 @@
+% Convict Films Letter Template
+% @Copyright 2010-09-08 Saul Howard
+% http://github.com/saulhoward/brighton-wok-documents
+
+\def\documenttitle{Letter Template}
+\input{bwok-pre-document-letter}
+\input{bwok-pre-font-serif}
+\input{bwok-pre-packages}
+
+\setkomavar{fromname}{John Smith}
+\setkomavar{signature}{John Smith}
+\setkomavar{fromaddress}{Convict Films\\12 Chesham Rd\\Brighton {\bwokserifuppercase BN2 1NB}}
+\setkomavar{fromemail}{sales@convictfilms.com}
+\setkomavar{fromphone}{{\bwokseriffixednumbers +44 (0) 1273 674 586}}
+\setkomavar{subject}{Here goes the subject of the letter}
+
+\begin{document}
+
+\begin{letter}{Some firm\\some area\\some postcode\\some country}
+
+\opening{Dear Sir or Madam,}
+
+this is the main text
+
+\closing{yours sincerely\\ \mbox{}}
+
+% \ps
+% Take care. this is postscript.
+
+% \encl{enclosures}
+
+% \cc{additional addressees}
+
+\end{letter}
+\end{document}
